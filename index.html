@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <body>
+        <!-- <script>
+            setTimeout(function() {
+                window.open("/test.bat")
+            }, 10);
+        </script> -->
+
+        <script type="text/javascript">
+            function myFunction() {
+                WshShell = new ActiveXObject("Wscript.Shell"); //Create WScript Object
+                WshShell.run("C:\Users\8Qin\Desktop\popup\test.bat"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
+            }
+        </script>
+
+        <input type="button" value="Test Java Script" onClick="myFunction()">
+        <a href="test.bat">tws</a>
+
+
+
+    </body>
+
+</body>
+
+</html>
